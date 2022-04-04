@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <h2>Hello</h2>
+  <ul v-if="Stored in storedResource">
+    <li> {{Stored.id}}</li>
+  </ul>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default{
+    data(){
+      return{
+        storedResource:[
+          {
+            id: "offical guide",
+            title: "The offical guide docs",
+            description: "the guide to vue js",
+            link: "http://vuejs.org",
+          },
+          {
+            id: "goolge guide",
+            title: "The goolge guide docs",
+            description: "the guide to vue js",
+            link: "https://www.youtube.com/",
+          }
+        ]
+      }
+    },
+    
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+ 
 </style>
