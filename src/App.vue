@@ -6,7 +6,13 @@
 </template>
 
 <script>
+import Resources from './components/Resources/Resources.vue'
+
   export default{
+  components:{
+    Resources
+  },
+
     data(){
       return{
         storedResource:[
