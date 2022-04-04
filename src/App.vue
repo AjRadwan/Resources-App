@@ -1,19 +1,15 @@
 <template>
   <ul>
-    <Resources v-for="res in storedResource" 
-    :key="res.id"
-    :title="res.title"
-    :description="res.description"
-    :link="res.link" />
+    <StoredResource :resources="storedResource"/>
   </ul>
 </template>
 
 <script>
-import Resources from './components/Resources/Resources.vue'
+import StoredResource from './components/Resources/StoredResource.vue'
 
   export default{
   components:{
-    Resources
+    StoredResource
   },
 
     data(){
@@ -39,5 +35,17 @@ import Resources from './components/Resources/Resources.vue'
 </script>
 
 <style>
- 
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
 </style>
