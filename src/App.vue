@@ -1,7 +1,10 @@
 <template>
- <h2>Hello</h2>
-  <ul v-if="Stored in storedResource">
-    <li> {{Stored.id}}</li>
+  <ul>
+    <Resources v-for="res in storedResource" 
+    :key="res.id"
+    :title="res.title"
+    :description="res.description"
+    :link="res.link" />
   </ul>
 </template>
 
