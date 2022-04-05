@@ -12,7 +12,7 @@
 import Resources from "./Resources.vue"
 
 export default {
-    props: ['resources'],
+    inject: ['resources'],
 
 components:{
     Resources

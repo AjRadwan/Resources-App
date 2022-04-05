@@ -1,12 +1,12 @@
 <template>
   <header>
-      <h1>{{title}}</h1>
+    <h1>{{ title }}</h1>
   </header>
 </template>
 
 <script>
 export default {
-props:['title'],
+  props: ['title']
 }
 </script>
 
@@ -24,5 +24,4 @@ header h1 {
   color: white;
   margin: 0;
 }
-
 </style>
